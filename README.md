@@ -49,6 +49,7 @@ INSERT INTO Account VALUES (7777, 'C009', 3000000, 0);
    + Mở file code duy nhất ở Folder Client là BankClientGUI, nó cũng có sẵn hàm main rồi, chạy lên thôi, chạy cái này lên chỉ cần nhập 1 trong mấy cái số tài khoản bảng bảng Account như 1001, 1111, 2222, này kia vào là được!
   
    + Rồi hết rồi đó, code thì tui cũng mới clone chỉnh lại giao diện với fix lại kết nối này kia cho dùng được với SQLServer chứ còn cái RMI này thì chưa coi kỹ, nhưng mà nó cũng dễ lắm, về mặt cơ bản là nó cần những cái chính như ri nè:
+
 Bước 1: Tạo Remote Interface
 public interface TinhTongRemote extends Remote {
     int tinhTong(int a, int b) throws RemoteException;
